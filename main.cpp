@@ -114,6 +114,7 @@ void addBook(Node **head, bool front)
     {
         insertTail(head, newBook);
     }
+    cout << "the book \"" << newBook.title << "\" is successfully added at " << front ? "front!" : "back!";
 }
 
 void deleteBook(Node **head) {
@@ -121,6 +122,7 @@ void deleteBook(Node **head) {
     cout << "Insert title for delete: ";
     getline(cin, key);
     deleteNode(head, key);
+    cout << "the book \"" << key << "\" is successfully deleted!";
 }
 
 int main()
